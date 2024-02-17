@@ -177,6 +177,28 @@ namespace SmartMatrix {
       }
       return letterMap;
     }
+    /**
+     * draw a character (letters A to Z, numbers 0 to 9, etc.) on the matrix
+     * @param char -the character to display
+     * @param x -the postition on the x-axis (left is 0)
+     * @param y -the position on the y-axis (top is 0)
+     * @param colour -the colour to display the bitmap in
+     */
+    //% blockId="Matrix_drawCharacter" block="%matrix draw character %char at x %x y %y in colour %colour"
+    //% weight=70
+    //% x.defl=0 y.defl=0
+    //% colour.shadow=neopixel_colors
+    drawCharacter(char: string, x: number, y: number, colour: number): void {
+      this.drawBitmap(
+        getLettermap(char),
+        x,
+        y,
+        8,
+        8,
+        colour,
+        drawDirection.normal
+      );
+    }
   }
 
   /**
