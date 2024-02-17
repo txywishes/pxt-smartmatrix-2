@@ -188,6 +188,7 @@ namespace SmartMatrix {
     //% weight=70
     //% x.defl=0 y.defl=0
     //% colour.shadow=neopixel_colors
+    //% inlineInputMode = inline;
     drawCharacter(char: string, x: number, y: number, colour: number): void {
       this.drawBitmap(
         getLettermap(char),
@@ -208,7 +209,7 @@ namespace SmartMatrix {
    * @param matrixHeight the amount of leds vertically
    * @param mode the format/type of the LED
    */
-  //% blockId="Matrix_Create" block="Matrix at pin %pin|with a width of %matrixWidth |height of %matrixHeight | and with %mode pixeltype"
+  //% blockId="Matrix_Create" block="Matrix at pin %pin|with a width of %matrixWidth| height of %matrixHeight| and with %mode pixeltype"
   //% weight=100
   //% matrixWidth.defl=32 matrixHeight.defl=8
   //% blockSetVariable=matrix
