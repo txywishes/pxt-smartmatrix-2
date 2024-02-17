@@ -184,7 +184,7 @@ namespace SmartMatrix {
      * @param y -the position on the y-axis (top is 0)
      * @param colour -the colour to display the bitmap in
      */
-    //% blockId="Matrix_drawCharacter" block="%matrix draw character %char| at x %x| y %y| in colour %colour"
+    //% blockId="Matrix_drawCharacter" block="%matrix draw character %char at x %x y %y in colour %colour"
     //% weight=70
     //% x.defl=0 y.defl=0
     //% colour.shadow=neopixel_colors
