@@ -188,7 +188,7 @@ namespace SmartMatrix {
     //% weight=70
     //% x.defl=0 y.defl=0
     //% colour.shadow=neopixel_colors
-    //% inlineInputMode=inline;
+    //% inlineInputMode=inline
     drawCharacter(char: string, x: number, y: number, colour: number): void {
       this.drawBitmap(
         getLettermap(char),
