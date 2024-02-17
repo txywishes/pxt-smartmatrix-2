@@ -161,6 +161,8 @@ namespace SmartMatrix {
         }
       }
     }
+    //% blockId="Matrix_getLettermap" block="%matrix get map for character %char"
+    //% advanced=true
     getLettermap(char: string): number[] {
       let letterMap: number[] = [0, 0, 0, 0, 0, 0, 0, 0];
       let offset = char.charCodeAt(0) - 32; //Convert the ASCII-Character to it's code to generate the offset in the font-array
